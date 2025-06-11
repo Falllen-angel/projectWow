@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+.main_box{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90vw;
+  height: 1200px;
+  background: rgba(232, 216, 196, 0.2);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 40px );
+  -webkit-backdrop-filter: blur( 40px );
+  border-radius: 1vw;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  overflow: hidden;
+  white-space: nowrap;
+}
+.main_ttl{
+  position: absolute;
+  display: block;
+  width: fit-content;
+  left: 7vw;
+  top: 150px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 130px;
+  color: #fffafa;
+  z-index: 2;
+  text-shadow:   
+    1px 1px 2px red,
+    0 0 1em blue,
+    0 0 0.2em blue
+    /* 5px 5px #558abb */
+    ;
+}
+.main_sub{
+  position: absolute;
+  display: block;
+  width: fit-content;
+  left: 15vw;
+  top: 400px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 80px;
+  font-style: normal;
+  color: #fffafa;
+  z-index: 2;
+}
+.main_img{
+  position: relative; 
+  float: right;
+  width: 600px;
+  /* transform: rotate(-20deg); */
+  /* filter: blur(5px); */
+  z-index: 2;
+}
+@keyframes left-down {
+  0% {
+    transform: translate(+804px, -472px) rotate(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(-30deg);
+    opacity: 1;
+  }
+}
+@keyframes right-up {
+  0% {
+    transform: translate(-804px, +472px) rotate(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(-30deg);
+    opacity: 1;
+  }
+}
+.back_txt > span{
+  position: absolute;
+  display: block;
+  font-family: "Lobster";
+  font-style: normal;
+  font-size: 130px;
+  color: rgba(232, 216, 196, 0.04); 
+  font-weight: bold;
+  transform: rotate(-30deg);
+  z-index: 1;
+  filter: blur(3px);
+  
+}
+.back_txt > span:nth-child(1){
+  /* left: -20px;
+  top: -150px; */
+  top: 100px;
+  animation: left-down 1s ease-out forwards;
+}
+.back_txt > span:nth-child(2){
+  left: 20vw;
+  top: 100px;
+  animation: left-down 1s ease-out forwards;
+
+}
+.back_txt > span:nth-child(3){
+  left: 40vw;
+  top: 100px;
+  animation: left-down 1s ease-out forwards;
+
+}
+.back_txt > span:nth-child(4){
+  left: 60vw;
+  top: 100px;
+  animation: left-down 1s ease-out forwards;
+  
+}
+.back_txt > span:nth-child(5){
+  top: 800px;
+  animation: right-up 1s ease-out forwards;
+
+}
+.back_txt > span:nth-child(6){
+  left: 20vw;
+  top: 800px;
+  animation: right-up 1s ease-out forwards;
+
+}
+.back_txt > span:nth-child(7){
+  left: 40vw;
+  top: 800px;
+  animation: right-up 1s ease-out forwards;
+
+}
+.back_txt > span:nth-child(8){
+  left: 60vw;
+  top: 800px;
+  animation: right-up 1s ease-out forwards;
+
+}
