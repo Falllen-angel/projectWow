@@ -13,7 +13,7 @@ function App() {
     <div>
       <div className="head_area">
         <div className="h_main">
-          <h1><Link to='/'><img className="logo" src={Logoimg} alt=""/></Link></h1>
+          <h1><Link to='/projectWow'><img className="logo" src={Logoimg} alt=""/></Link></h1>
           <div className="h_nav">
             <div className="h_nav_top">
               <ul className="h_nav_top_in">
@@ -34,7 +34,7 @@ function App() {
         </div>
       </div>
       <div style={{width:'100%'}}>
-        <Route path='/' exact={true} component={Home} />
+        <Route path='/projectWow' exact={true} component={Home} />
         <Route path='/Products' component={Products} />
         <Route path='/Products' component={About} />
         <Route path='/AboutUs' component={Clients} />
