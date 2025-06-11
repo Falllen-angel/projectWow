@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/projectWow/static/css/main.d863f069.css",
-    "main.js": "/projectWow/static/js/main.f415866d.js",
+    "main.css": "/projectWow/static/css/main.aec31d1a.css",
+    "main.js": "/projectWow/static/js/main.6d28884e.js",
+    "static/media/background.png": "/projectWow/static/media/background.ebde64e28bedea17d349.png",
+    "static/media/MainImg.png": "/projectWow/static/media/MainImg.25cfa500b2f3a5eb7476.png",
+    "static/media/MainImg2.png": "/projectWow/static/media/MainImg2.73fbc8dbbb075cdaaaa3.png",
+    "static/media/Logo2.png": "/projectWow/static/media/Logo2.f6ad1203164064bb1a4c.png",
     "static/media/Logo.png": "/projectWow/static/media/Logo.e5254cd5d10a8e8aa924.png",
     "index.html": "/projectWow/index.html",
-    "main.d863f069.css.map": "/projectWow/static/css/main.d863f069.css.map",
-    "main.f415866d.js.map": "/projectWow/static/js/main.f415866d.js.map"
+    "main.aec31d1a.css.map": "/projectWow/static/css/main.aec31d1a.css.map",
+    "main.6d28884e.js.map": "/projectWow/static/js/main.6d28884e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d863f069.css",
-    "static/js/main.f415866d.js"
+    "static/css/main.aec31d1a.css",
+    "static/js/main.6d28884e.js"
   ]
 }
