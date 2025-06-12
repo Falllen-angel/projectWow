@@ -28,6 +28,8 @@ export default function Home(){
           <span>This is Häagen-Dazs</span>
           <span>This is Häagen-Dazs</span>
         </div>
+        <div>Buy</div>
+        <div>More</div>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@
   margin: 0 auto;
   margin-top: 30px;
   width: 80vw;
-  height: 1100px;
+  height: 42.96875vw;
   background: rgba(232, 216, 196, 0.2);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 40px );
@@ -70,17 +70,17 @@
 .main_txt_box_back{
   position: absolute;
   left: 6.95vw;
-  top: 148px;
-  width: 1204px;
-  height: 904px;
+  top: 5.78125vw;
+  width: 47.03125vw;
+  height: 35.3125vw;
   border-radius: 41px;
-  background-color: #7fb443;
+  background-color: #f01919;
   box-shadow: 0 0 .2rem #fff,
   0 0 .2rem #fff,
-  0 0 2rem #c4f79a,
-  0 0 0.8rem #c4f79a,
-  0 0 2.8rem #c4f79a,
-  inset 0 0 1.3rem #c4f79a;
+  0 0 2rem #f01919,
+  0 0 0.8rem #f01919,
+  0 0 2.8rem #f01919,
+  inset 0 0 1.3rem #f01919;
   z-index: 1;
   animation: back-light 1s linear forwards;
   /* animation: pulsate 1s linear forwards; */
@@ -88,9 +88,9 @@
 .main_txt_box{
   position: absolute;
   left: 7vw;
-  top: 150px;
-  width: 1200px;
-  height: 900px;
+  top: 5.839375vw;
+  width: 46.875vw;
+  height: 35.15625vw;
   border-radius: 40px;
   background-color: #232525;
   z-index: 2;
@@ -111,12 +111,12 @@
   padding: 20px;
   /* background-color: #558abb; */
   left: 9vw;
-  top: 200px;
+  top: 7.8125vw;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 130px;
+  font-size: 5.078125vw;
   color: #fffafa;
   /* color: #000000; */
   z-index: 2;
@@ -140,11 +140,11 @@
   display: block;
   width: fit-content;
   left: 10vw;
-  top: 400px;
+  top: 15.625vw;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 3.125vw;
   font-style: normal;
   color: #fffafa;
   z-index: 2;
@@ -163,9 +163,9 @@
 .main_img{
   position: relative; 
   float: right;
-  top: 60px;
-  right: 90px;
-  width: 650px;
+  top: 3.515625vw;
+  right: 3.515625vw;
+  width: 25.390625vw;
   /* transform: rotate(-20deg); */
   /* filter: blur(5px); */
   /* image-rendering: pixelated; */
