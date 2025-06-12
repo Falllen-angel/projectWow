@@ -1,44 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 .main_box{
   margin: 0 auto;
   margin-top: 30px;
-  width: 90vw;
-  height: 1200px;
+  width: 80vw;
+  height: 1100px;
   background: rgba(232, 216, 196, 0.2);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 40px );
   -webkit-backdrop-filter: blur( 40px );
   border-radius: 1vw;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 0.01rem #bc13fe,
+            0 0 0.01rem #bc13fe,
+            0 0 1.8rem #bc13fe,
+            inset 0 0 .3rem #bc13fe;
   overflow: hidden;
   white-space: nowrap;
 }
+@keyframes back-light {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    box-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    box-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #f09,
+      0 0 73px #f09,
+      0 0 80px #f09,
+      0 0 94px #f09,
+      0 0 140px #f09;
+  }
+}
+.main_txt_box_back{
+  position: absolute;
+  left: 6.95vw;
+  top: 148px;
+  width: 1204px;
+  height: 904px;
+  border-radius: 41px;
+  background-color: #7fb443;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #c4f79a,
+  0 0 0.8rem #c4f79a,
+  0 0 2.8rem #c4f79a,
+  inset 0 0 1.3rem #c4f79a;
+  z-index: 1;
+  animation: back-light 1s linear forwards;
+  /* animation: pulsate 1s linear forwards; */
+}
+.main_txt_box{
+  position: absolute;
+  left: 7vw;
+  top: 150px;
+  width: 1200px;
+  height: 900px;
+  border-radius: 40px;
+  background-color: #232525;
+  z-index: 2;
+  /* filter: blur(0.09rem); */
+  /* position */
+  /* box-shadow: 
+      1px 1px 2px red,
+    0 0 1em blue,
+    0 0 0.2em blue
+    ; */
+}
 .main_ttl{
+  mix-blend-mode: difference;
   position: absolute;
   display: block;
   width: fit-content;
-  left: 7vw;
-  top: 150px;
+  border-radius: 30px;
+  padding: 20px;
+  /* background-color: #558abb; */
+  left: 9vw;
+  top: 200px;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 130px;
   color: #fffafa;
+  /* color: #000000; */
   z-index: 2;
   text-shadow:   
-    1px 1px 2px red,
+    /* 1px 1px 2px red,
     0 0 1em blue,
-    0 0 0.2em blue
+    0 0 0.2em blue */
     /* 5px 5px #558abb */
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 1px #fff,
+    0 0 10px rgb(0, 38, 255),
+    0 0 40px rgb(0, 38, 255),
+    0 0 50px rgb(0, 38, 255),
+    0 0 60px rgb(0, 38, 255),
+    0 0 100px rgb(0, 38, 255);
     ;
 }
 .main_sub{
   position: absolute;
   display: block;
   width: fit-content;
-  left: 15vw;
+  left: 10vw;
   top: 400px;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -48,13 +149,28 @@
   color: #fffafa;
   z-index: 2;
 }
+@keyframes iceCream-left {
+  0%{
+    transform: translateX(700px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+}
 .main_img{
   position: relative; 
   float: right;
-  width: 600px;
+  top: 60px;
+  right: 90px;
+  width: 650px;
   /* transform: rotate(-20deg); */
   /* filter: blur(5px); */
+  /* image-rendering: pixelated; */
   z-index: 2;
+  animation: iceCream-left 1.3s ease-out forwards;
 }
 @keyframes left-down {
   0% {

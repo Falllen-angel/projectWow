@@ -3,7 +3,7 @@ body{
   background-image: url(./images/background.png);
   width: 100%;
   height: 6000px;
-  padding-top: 150px;
+  padding-top: 110px;
 
 }
 nav{
@@ -18,9 +18,9 @@ nav{
 .head_area{
   position: fixed;
   width: 90vw;
-  height: 110px;
+  height: 100px;
   display: flex;
-  top: 20px;
+  top: 10px;
   left: 50%;
   transform: translate(-50%, 10px);
   border-bottom: 1px solid #000;
