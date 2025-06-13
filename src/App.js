@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Logoimg from './images/Logo2.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import About from './components/About';
-import Products from './components/Products';
+import ProductList from './components/Products';
 import Clients from './components/Clients';
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
       </div>
       <div style={{width:'100%'}}>
         <Route path='/projectWow' exact={true} component={Home} />
-        <Route path='/Products' component={Products} />
+        <Route path='/Products' component={ProductList} />
         <Route path='/Products' component={About} />
         <Route path='/AboutUs' component={Clients} />
       </div>
