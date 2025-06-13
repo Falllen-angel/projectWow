@@ -1,17 +1,23 @@
 {
   "files": {
     "main.css": "/projectWow/static/css/main.fbec7640.css",
-    "main.js": "/projectWow/static/js/main.7000b192.js",
+    "main.js": "/projectWow/static/js/main.33b642f4.js",
     "static/media/background.png": "/projectWow/static/media/background.ebde64e28bedea17d349.png",
     "static/media/MainImg.png": "/projectWow/static/media/MainImg.25cfa500b2f3a5eb7476.png",
     "static/media/Make it natural.png": "/projectWow/static/media/Make it natural.65adf15f75126cb4166f.png",
     "static/media/Logo2.png": "/projectWow/static/media/Logo2.f6ad1203164064bb1a4c.png",
+    "static/media/p1.png": "/projectWow/static/media/p1.5ad2e9524dc34bf013f3.png",
+    "static/media/p6.png": "/projectWow/static/media/p6.5a746ac29f29e4a20555.png",
+    "static/media/p5.png": "/projectWow/static/media/p5.135ef601ff5799219787.png",
+    "static/media/p3.png": "/projectWow/static/media/p3.552048371b18b39cb238.png",
+    "static/media/p4.png": "/projectWow/static/media/p4.5591910b1bc0dda8f710.png",
+    "static/media/p2.png": "/projectWow/static/media/p2.76766c1f72f9cf60aeec.png",
     "index.html": "/projectWow/index.html",
     "main.fbec7640.css.map": "/projectWow/static/css/main.fbec7640.css.map",
-    "main.7000b192.js.map": "/projectWow/static/js/main.7000b192.js.map"
+    "main.33b642f4.js.map": "/projectWow/static/js/main.33b642f4.js.map"
   },
   "entrypoints": [
     "static/css/main.fbec7640.css",
-    "static/js/main.7000b192.js"
+    "static/js/main.33b642f4.js"
   ]
 }
