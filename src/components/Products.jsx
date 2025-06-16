@@ -7,6 +7,7 @@ import p5 from '../images/p5.png';
 import p6 from '../images/p6.png';
 import { ProProvider } from "../HContext";
 import styles from './Products.module.css';
+import {Route, Link} from 'react-router-dom';
 
 function Product({item, onToggle}){
   return (
@@ -14,8 +15,8 @@ function Product({item, onToggle}){
         style={{color:item.active? 'red':'black'}} onClick={()=>onToggle(item.id)}>
           <div className={styles.in_box}>
             <img src={item.src} style={{width:'100%', borderBottom:'1px solid #ccc'}}  alt="" />
-            <h4 style={{fontSize:'15px', padding:'0 0 0 10px'}}>{item.name}</h4>
-            <p style={{fontSize:'10px', padding:'5px 0 0 10px'}}>{item.price}</p>
+            <h4 style={{ padding:'0 0 0 10px'}}>{item.name}</h4>
+            <p style={{ padding:'5px 0 0 10px'}}>{item.price}</p>
 
           </div>
       </li>
@@ -112,11 +113,22 @@ export default function ProductList(){
   return(
     <>
       <ul className={styles.L_box}>
-        {
-          items.map(item=>(
-            <Product item={item} key={item.id}  onToggle={onToggle}/>
-          ))
-        }
+        <div className={styles.type_nav}>
+          <ul>
+            <li>All</li>
+            <li>Pint</li>
+            <li>Mini</li>
+            <li>Stick</li>
+            <li>Cake</li>
+          </ul>
+        </div>
+        <div className={styles.products}>
+          {
+            items.map(item=>(
+              <Product item={item} key={item.id}  onToggle={onToggle}/>
+            ))
+          }
+        </div>
       </ul>
     </>
   )
