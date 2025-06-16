@@ -5,15 +5,19 @@ import p3 from '../images/p3.png';
 import p4 from '../images/p4.png';
 import p5 from '../images/p5.png';
 import p6 from '../images/p6.png';
+import { ProProvider } from "../HContext";
+import styles from './Products.module.css';
 
 function Product({item, onToggle}){
   return (
-      <li
-        style={{width:'188px', height:'260px', border:'1px solid #ccc', cursor:'pointer', color:item.active? 'red':'black', backgroundColor:'#fff31f'
-        }}onClick={()=>onToggle(item.id)}>
-          <img src={item.src} style={{width:'100%', borderBottom:'1px solid #ccc'}}  alt="" />
-          <h4 style={{fontSize:'15px', padding:'0 0 0 10px'}}>{item.name}</h4>
-          <p style={{fontSize:'10px', padding:'5px 0 0 10px'}}>{item.price}</p>
+      <li className={styles.box}
+        style={{color:item.active? 'red':'black'}} onClick={()=>onToggle(item.id)}>
+          <div className={styles.in_box}>
+            <img src={item.src} style={{width:'100%', borderBottom:'1px solid #ccc'}}  alt="" />
+            <h4 style={{fontSize:'15px', padding:'0 0 0 10px'}}>{item.name}</h4>
+            <p style={{fontSize:'10px', padding:'5px 0 0 10px'}}>{item.price}</p>
+
+          </div>
       </li>
 
   )
@@ -98,16 +102,16 @@ export default function ProductList(){
     setItLi(items.map(item=>item.id===id?{...item, active:!item.active}:item))
   };
 
-  const list = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    paddingTop: '40px',
-    boxSizing: 'border-box' 
-  }
+  // const list = {
+  //   display: 'flex',
+  //   justifyContent: 'space-between',
+  //   paddingTop: '40px',
+  //   boxSizing: 'border-box' 
+  // }
 
   return(
     <>
-      <ul style={list}>
+      <ul className={styles.L_box}>
         {
           items.map(item=>(
             <Product item={item} key={item.id}  onToggle={onToggle}/>

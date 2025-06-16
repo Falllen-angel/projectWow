@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.L_box{
+  margin: 0 auto;
+  width: 80vw;
+  height: 59vw;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  box-sizing: border-box;
+  background: rgba(232, 216, 196, 0.2);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 40px );
+  -webkit-backdrop-filter: blur( 40px );
+  border-radius: 1vw;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 0.01rem #bc13fe,
+              0 0 0.01rem #bc13fe,
+              0 0 1.8rem #bc13fe,
+              inset 0 0 .3rem #bc13fe;
+  flex-wrap: wrap;
+  gap: 10px;   
+}
+.box{
+  width: 13vw;
+  height: 19.298245614vw;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  /* margin: 0 1.169590643vw; */
+  border-radius: 51px;
+    background: rgba(232, 216, 196, 0.2);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 40px );
+  -webkit-backdrop-filter: blur( 40px ); 
+  box-shadow: 0 0 .1rem #fff,
+  0 0 .2rem #fff,
+  0 0 0.1rem #f019a5,
+  0 0 0.8rem #f019a5,
+  0 0 2.8rem #f019a5,
+  inset 0 0 1.3rem #f019a5;
+  overflow: hidden;
+  z-index: 1;
+}
+.in_box{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11vw;
+  height: 17.5vw;
+  border-radius: 41px;
+  background-color: #1e076b;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .1rem #fff,
+  0 0 0.1rem #d29292,
+  0 0 0.1rem #d29292,
+  0 0 0.1rem #d29292,
+  inset 0 0 0.2rem #d29292;
+  overflow: hidden;
+  z-index: 2;
+}
+.in_box > img{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.in_box > h4{
+    font-size: 15px;
+    padding: 0 0 0 10px;
+        text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+}
+.in_box > p{
+    font-size: 10px;
+    padding: 5px 0 0 10px;
+        text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+}
