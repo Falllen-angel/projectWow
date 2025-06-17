@@ -23,7 +23,6 @@ function Product({item, onToggle}){
 
   )
 }
-
 export default function ProductList(){
   const [items, setItLi] = useState([
       {
@@ -103,32 +102,52 @@ export default function ProductList(){
     setItLi(items.map(item=>item.id===id?{...item, active:!item.active}:item))
   };
 
-  // const list = {
-  //   display: 'flex',
-  //   justifyContent: 'space-between',
-  //   paddingTop: '40px',
-  //   boxSizing: 'border-box' 
-  // }
 
+  const [filteredItems, setFilteredItems] = useState(items);
+
+  const handleFilter = (type) => {
+    if (type === 'all') {
+      setFilteredItems(items);
+    } else {
+      const filtered = items.filter((item) => {
+        // 타입 문자열에 포함되는지 체크
+        if (type === 'pt') return item.type === 'pt';
+        if (type === 'mpt') return item.type === 'mpt';
+        if (type === 'sb') return item.type === 'sb';
+        if (type === 'ck') return item.type === 'ck';
+        return true;
+      });
+      setFilteredItems(filtered);
+    }
+  };
+  
   return(
     <>
       <ul className={styles.L_box}>
         <div className={styles.type_nav}>
           <ul>
-            <li>All</li>
-            <li>Pint</li>
-            <li>Mini</li>
-            <li>Stick</li>
-            <li>Cake</li>
+            <li onClick={() => setFilteredItems(items)}>All</li>
+            <li onClick={() => handleFilter('pt')}>Pint</li>
+            <li onClick={() => handleFilter('mpt')}>Mini</li>
+            <li onClick={() => handleFilter('sb')}>Stick</li>
+            <li onClick={() => handleFilter('ck')}>Cake</li>
           </ul>
         </div>
-        <div className={styles.products}>
+        {/* <div className={styles.products}>
           {
             items.map(item=>(
               <Product item={item} key={item.id}  onToggle={onToggle}/>
             ))
           }
+        </div> */}
+        <div className={styles.products}>
+          {
+            filteredItems.map(item => (
+              <Product item={item} key={item.id} onToggle={onToggle} />
+            ))
+          }
         </div>
+
       </ul>
     </>
   )

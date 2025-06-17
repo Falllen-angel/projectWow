@@ -66,15 +66,31 @@
   font-size: 1.2vw;
   border-radius: 41vw;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.type_nav > ul > li:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 0.01rem #01c4ff,
+  0 0 0.01rem #01c4ff,
+  0 0 1.8rem #01c4ff,
+  inset 0 0 .3rem #01c4ff;
+  transition: 0.5s ease-in-out;
 }
 .products{
   width: 100%;
-  display: flex; 
+  /* display: flex; 
   justify-content: space-evenly;
   box-sizing: border-box;
   padding-top: 20px;
   flex-wrap: wrap;
-  gap: 10px;   
+  gap: 10px;    */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.953125vw;
+  justify-content: center;
 }
 .box{
   display: flex;
@@ -99,32 +115,13 @@
   inset 0 0 1.3rem #f019a5;
   overflow: hidden;
   z-index: 1;
+  transition: 0.3s ease-in-out;
 
 }
 .box:hover{
-  display: flex;
-  justify-content: center;
-  align-items: center;     
-  flex-direction: column;
-  width: 13vw;
-  height: 19.298245614vw;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  /* margin: 0 1.169590643vw; */
-  border-radius: 51px;
-  background: rgba(232, 216, 196, 0.2);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 40px );
-  -webkit-backdrop-filter: blur( 40px ); 
-  box-shadow: 0 0 .1rem #fff,
-  0 0 .2rem #fff,
-  0 0 0.1rem #f019a5,
-  0 0 0.8rem #f019a5,
-  0 0 2.8rem #f019a5,
-  inset 0 0 1.3rem #f019a5;
-  overflow: hidden;
-  z-index: 1;
-  transition: all 1s ;
+  transform: scale(1.2);
+  z-index: 10;
+  transition: 0.4s ease-in-out;
 }
 .in_box{
   width: 9.3vw;
@@ -138,22 +135,13 @@
   0 0 0.1rem #d29292,
   inset 0 0 0.2rem #d29292;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1;
+  transition: 0.08s ease-in-out ;
 }
 .in_box:hover{
-  width: 12.3vw;
-  height: 18.5vw;
-  border-radius: 41px;
-  background-color: #1e076b;
-  box-shadow: 0 0 .2rem #fff,
-  0 0 .1rem #fff,
-  0 0 0.1rem #d29292,
-  0 0 0.1rem #d29292,
-  0 0 0.1rem #d29292,
-  inset 0 0 0.2rem #d29292;
-  overflow: hidden;
-  z-index: 2;
-  transition: all 1s ;
+  transform: scale(1.02);
+  z-index: 10;
+  transition: 0.2s ease-in-out ;
 }
 .in_box > img{
     width: 100%;
@@ -173,6 +161,7 @@
     0 0 100px #f09,
     0 0 150px #f09;
   height: 1.5vw;
+  margin: 0.3125vw 0.1171875vw;
 }
 .in_box > p{
   color: #fff;
