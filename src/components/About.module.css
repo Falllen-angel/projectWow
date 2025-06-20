@@ -1,0 +1,57 @@
+.main_box{
+  margin: 0 auto;
+  width: 80vw;
+  height: 59vw;
+  margin-top: 30px;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  /* padding-top: 40px;
+  box-sizing: border-box; */
+  /* background: rgba(232, 216, 196, 0.2); */
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  backdrop-filter: blur( 40px );
+  -webkit-backdrop-filter: blur( 40px );
+  border-radius: 1vw;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 0.01rem #bc13fe,
+              0 0 0.01rem #bc13fe,
+              0 0 1.8rem #bc13fe,
+              inset 0 0 .3rem #bc13fe;
+  /* flex-wrap: wrap; */
+  /* gap: 10px;    */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.main_img{
+  width: 80vw;
+  position: relative;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* top: -400px; */
+}
+hr{
+  margin-top: 8vw;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 0.01rem #bc13fe,
+  0 0 0.01rem #bc13fe,
+  0 0 1.8rem #bc13fe,
+  inset 0 0 .3rem #bc13fe;
+}
+.txt_box{
+  margin: 0 auto;
+  margin-top: 10vw;
+  width: 50vw;
+  height: auto;
+  color: #fff;
+  border: 1px solid #342343;
+  font-family:"Shrikhand", serif;
+  font-weight:100;
+  font-size:12vmin;
+}
+.core_values{
+
+}

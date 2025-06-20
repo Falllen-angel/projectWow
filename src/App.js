@@ -46,8 +46,8 @@ function App() {
         <div style={{width:'100%'}}>
           <Route path='/projectWow' exact={true} component={Home} />
           <Route path='/Products' component={ProductList} />
-          <Route path='/Products' component={About} />
-          <Route path='/AboutUs' component={Clients} />
+          <Route path='/AboutUs' component={About} />
+          <Route path='/Clients' component={Clients} />
         </div>
       </div>
     // </ProProvider>

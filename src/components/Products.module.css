@@ -4,7 +4,8 @@
 .L_box{
   margin: 0 auto;
   width: 80vw;
-  height: 59vw;
+  /* height: 59vw; */
+  height: auto;
   margin-top: 30px;
   /* display: flex; */
   /* justify-content: space-evenly; */
